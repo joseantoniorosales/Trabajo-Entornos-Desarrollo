@@ -1,0 +1,189 @@
+/*  hoja de estilos para el portfolio de Lenguajes de Marcas */
+
+/* Cambia la forma en la que el scroll se mueve */
+
+html {scroll-behavior: smooth;}
+
+/* reglas generales de estilo */
+
+body {background-color:black;
+      font-family: 'Roboto Condensed', sans-serif;}
+#wrapper {width:85%;
+          margin:auto;
+          background-color:white;}
+
+/* Estilo del header */
+
+header {position:relative;
+       
+        
+    }
+header img {/*position:absolute;*/
+            width:100%;
+            height:auto;
+            opacity:0.8}
+#para-pc {display:block;}
+#para-movil {display:none;}
+#title {position:absolute;
+        /* para centrar en posicionamiento absolute */
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+
+        top:4vw;
+        text-align:center;
+        width:30%;
+        padding:1.8vw;
+        background-color: rgb(127, 166, 199);
+        color:white;
+        font-size:3.2vw;
+        border:4px solid white;
+        outline:10px solid rgba(91, 133, 167, 0.79);}
+/* sección de estilo para nav */
+        nav {font-size:1em;
+                
+                position: sticky;
+                position: -webkit-sticky;
+                top:0;
+        }
+        nav ul {list-style-type:none;
+                background-color: rgb(56, 114, 190);
+                margin:0;
+                padding:0;}
+        nav ul li {display:inline-block;     
+                   padding:10px 20px;
+                   }
+        nav ul li.active {background-color: rgb(24, 88, 139);}
+        nav ul li a {text-decoration:none;
+                     color:white;}
+        nav ul li:hover { 
+                         background-color:rgb(11, 163, 151); }
+        nav ul li a:hover {color:rgb(243, 224, 117);}
+
+        
+/* sección de estilo para main */
+        main h2 {text-align:left;
+        margin-left:3%}
+
+        main h4 {text-align:left;
+        margin-left:5%;
+        margin-right: 3%;}
+
+        #Scanner-Origen {
+                margin-left:300px;
+                        }
+        #Fun-Scanner {
+        margin-left: 500px;
+        margin-right:20px;
+        margin-bottom: 100px;
+        width:40%;}
+
+        #Puertos-SCSI {
+        margin-left: 100px;}
+
+        #Scanner-Mano {margin-left: 20px;}
+
+        #Scanner-Plano {margin-left: 500px;}
+
+        #Scanner-Rotativo {width: 30%;
+        margin-left: 300px;}
+
+        #Epson {width: 30%;
+        margin-left: 30px;
+        margin-top: 50px;}
+
+        #Canon {margin-left: 200px;}
+          
+          div.container {
+            text-align: center;
+            padding: 5px 10px;
+          }
+          
+ 
+
+          iframe {width:40vw;
+                  height:30vw;
+                  margin:auto;
+                  display:block;}
+
+        /* estilo de footer */ 
+          footer {
+                  background-color:rgb(112, 112, 112);
+                  color:white;
+                  height:300px;/* debería poder quitar esto */
+                  }
+          footer div {float:left;}
+          footer .cincuenta {width:50%;
+                background-color:rgb(112, 112, 112);
+                             }     
+          footer  p, footer  h3 {margin-left:15px;}
+          footer .venticinco {width:25%;
+                background-color:rgb(112, 112, 112);
+                        }   
+
+          footer  iframe {width:80%;
+                          height:60%;
+                          margin:10px auto;
+                          display:block;
+                          }
+          footer ul {list-style-type: none;}
+          footer .fa {font-size:2em;
+                      margin-right:5px;}
+          footer ul li a {text-decoration:none;
+                          color:white;}
+          footer .clear {clear:both;}
+
+          /* estilo responsive con media queries */
+
+          @media only screen and (max-width:500px) {
+            #para-pc {display:none;}
+            #para-movil{display:block;}
+            #wrapper {width:100%;}
+            nav {font-size:1em;
+                
+                position: sticky;
+                position: -webkit-sticky;
+                top:0;
+        }
+            nav ul {overflow: hidden;
+                background-color: #333;
+                position: relative;}
+            nav ul li {display: none;}
+            
+            nav ul li a {padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+                display: block;}
+            nav ul li:active {display:none;}
+            iframe {width:80vw;
+                    height:60vw;}
+            
+          }
+          
+          @media only screen and (max-width:700px){
+                footer .cincuenta, footer .venticinco {width:100%;}
+          }
+          @media only screen  and (min-width:500px){
+             div.polaroid {
+              width:40%;   
+              margin:5%;
+              float:left;
+             }
+             
+          
+          }
+          
+          @media only screen  and (min-width:900px){
+             div.polaroid {
+              width:20%;
+              float:left;
+              margin:2.5%;
+             }
+             div.container {
+               padding: 10px 20px
+             }
+          }
+
+    #cierre {clear:both;}
+          
